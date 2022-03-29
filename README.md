@@ -1,6 +1,10 @@
 Installations Required
+
 pip install nltk
+
 pip install textblob
+
+
 
 Run setup.py
 
