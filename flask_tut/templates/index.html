@@ -1,0 +1,33 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles %}
+{{ super() }}
+	<style>
+		body { background: #e8f1f9; }
+	</style>
+{% endblock %}
+
+
+{% block title %}
+Find Celeb Score
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+
+      <h1 class="pt-5 pb-2">Welcome to index</h1>
+
+      <p class="lead">This is the index page for an example Flask app using Bootstrap and WTForms. </p>
+
+      {{ wtf.quick_form(form) }}
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
