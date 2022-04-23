@@ -17,7 +17,7 @@ client = tweepy.Client(bearer_token=bearer_token, consumer_key=consumer_key, con
 query = "powerlifting"
 finalQuery = query + str(" -is:retweet")
 
-tweets = client.search_recent_tweets(finalQuery, tweet_fields=['public_metrics'], max_results=100)
+tweets = client.search_recent_tweets(finalQuery, tweet_fields=['public_metrics'],sort_order="relevancy" ,max_results=100)
 
 tweets_dict = tweets.json()
 
