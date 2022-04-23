@@ -13,7 +13,8 @@ access_token_secret = config.access_token_secret
 
 client = tweepy.Client(bearer_token=bearer_token, consumer_key=consumer_key, consumer_secret=consumer_secret, access_token=access_token, access_token_secret=access_token_secret, return_type=requests.Response)
 
-query = "powerlifting -is:retweet"
+query = "powerlifting"
+query = query + str(" -is:retweet")
 tweetText = client.search_recent_tweets(query, max_results=100)
 
 tweets_dict = tweetText.json()
