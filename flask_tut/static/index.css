@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#000000;
+    text-decoration: none;
+}
+
+.logo {
+    float: right;
+    padding-top: 1%;
+}
+
+.search {
+    font-size: 7em;
+}

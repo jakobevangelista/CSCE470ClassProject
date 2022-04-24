@@ -1,14 +1,11 @@
 {% extends 'bootstrap/base.html' %}
 {% import "bootstrap/wtf.html" as wtf %}
 
-<head>
-  <link rel="stylesheet" href="../styles/index.css">
-</head>
-
 {% block styles %}
-{{ super() }}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='index.css')}}">
 {% endblock %}
-
 
 {% block title %}
 Find Celebrity Score
@@ -16,21 +13,37 @@ Find Celebrity Score
 
 
 {% block content %}
-
 <div class="container">
+  
+  <!-- home button -->
   <div class="row">
-    <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+    <div class="logo">
+      <a href="">
+        <h2>home</h2>
+      </a>
+    </div>
+    
+  </div>
 
-      <h1 class="pt-5 pb-2">Welcome to index</h1>
+  <!-- main content --> 
+  <div class="row">
+      <h1 class="text-center search" >search</h1>
 
-      <p class="lead">This is the index page for an example Flask app using Bootstrap and WTForms. </p>
-        {% if error %}
-          <p>Invalid Celebrity</p>
-        {% endif %} 
+      <!-- error handling -->
+      {% if error %}
+        <p>Invalid Celebrity</p>
+      {% endif %} 
+
+      <!-- celeb name form -->
       {{ wtf.quick_form(form) }}
 
-    </div>
-  </div>
-</div>
+      <!-- footer: "made with love..." -->
+      <div class="footer navbar-fixed-bottom">
+        <h4 class="text-center">made with love for CSCE 470</h4>
+      </div>
 
+  </div>
+
+
+</div>
 {% endblock %}
