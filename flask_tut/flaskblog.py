@@ -128,6 +128,7 @@ def score(n1, n2):
         if overall_score < -5:
             overall_score = -5
 
+        overall_score = str(round(overall_score, 2))
         return render_template("score.html", first_name = n1.capitalize(), \
         last_name = n2.capitalize(), \
         word1 = top_ten[0], \
@@ -151,3 +152,5 @@ def index2():
         name2 = form.last_name.data
         return redirect(url_for('score', n1 = name1, n2 = name2))
     return render_template("index.html", form=form, error = error)
+
+    
