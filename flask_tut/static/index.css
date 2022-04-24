@@ -2,7 +2,7 @@
 
 body {
     height: 100%;
-    width: 100%;
+    width: 95%;
     background: #FFFFFF;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
@@ -45,5 +45,4 @@ a:hover {
 
 .container {
     float: right;
-    /* transform: translateY(-50%); */
 }
