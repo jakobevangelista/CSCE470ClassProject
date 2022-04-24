@@ -32,7 +32,21 @@ a:hover {
 }
 
 .right {
+    height: 100vh;
+    position: relative;
     padding-right: 0;
+}
+
+.bottom {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    bottom: 0;
+}
+.bottom-text {
+    text-align: center;
 }
 
 .logo {

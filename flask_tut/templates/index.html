@@ -20,7 +20,7 @@ Find Celebrity Score
 
 <div class="container right">
   <!-- home button -->
-  <div class="row logo"><a href=""><h3>home</h3></a></div>
+  <!-- <div class="row logo"><a href=""><h3>home</h3></a></div> -->
 
   <!-- right side --> 
   <div class="row">
@@ -33,15 +33,13 @@ Find Celebrity Score
       {% endif %} 
   </div>
 
+  <!-- footer: "made with love..." -->
+  <div class="bottom">
+    <h4 class="bottom-text">made with love for CSCE 470</h4>
+  </div>
+
   <!-- celeb name input form -->
   {{ wtf.quick_form(form) }}
-</div>
-
-
-
-<!-- footer: "made with love..." -->
-<div class="footer navbar-fixed-bottom">
-  <h4 class="text-center">made with love for CSCE 470</h4>
 </div>
 
 {% endblock %}
