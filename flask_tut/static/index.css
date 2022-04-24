@@ -25,6 +25,7 @@ a:hover {
 
 .search {
     font-size: 7em;
+    padding-top: 10%;
 }
 
 
@@ -34,6 +35,10 @@ a:hover {
     height: 100%;
     display: flex;
     position: absolute;
+}
+
+.right {
+    padding-right: 0;
 }
 
 .homebird {
