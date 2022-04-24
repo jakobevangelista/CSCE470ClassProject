@@ -18,16 +18,10 @@ a:hover {
     text-decoration: none;
 }
 
-.logo {
+.container {
     float: right;
-    padding-top: 1%;
+    padding: 0;
 }
-
-.search {
-    font-size: 7em;
-    padding-top: 10%;
-}
-
 
 .left {
     background-color: #A3D2E5;
@@ -41,6 +35,16 @@ a:hover {
     padding-right: 0;
 }
 
+.logo {
+    float: right;
+    padding-top: 1%;
+}
+
+.search {
+    font-size: 7em;
+    padding-top: 10%;
+}
+
 .homebird {
     max-height: 600px;
     /* padding-top: 200px; */
@@ -48,6 +52,3 @@ a:hover {
     overflow: hidden;
 }
 
-.container {
-    float: right;
-}

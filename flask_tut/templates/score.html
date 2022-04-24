@@ -8,24 +8,22 @@
 
 
 {% block title %}
-Selected Actor: {{ first_name }} {{last_name}}
+{{ first_name }} {{last_name}} - tweetPeek
 {% endblock %}
-
 
 {% block content %}
 
-<div class="container" >
+<!-- main container -->
+<div class="container-fluid p-0">
   <div class="row">
-      <a href="/">
-        <input type="button" value="Back to Home" />
-      </a>
-
+    
+      <!-- left side: celeb info & top words -->
       <div class="col">
         <div class="vl"></div>
       </div>
+    
       <div class="col">
         <div class="data">
-          <!-- note, the id is not used in the template -->
           <div class="fullname">
             <p class="fname">{{ first_name }} </p> 
             <p> &nbsp;&nbsp;&nbsp; <p> 
@@ -47,6 +45,15 @@ Selected Actor: {{ first_name }} {{last_name}}
       </div>
 
       <script src="{{url_for('static', filename='score.css')}}"></script>
+
+      <!-- right side: sentiment score -->
+      <div class="col-xs-4 right">
+        <p class="score score-text">-25</p>
+   
+  
+        <!-- <div class="scoresize">{{rating}}</div> -->
+      </div>
+
   </div>
 </div>
 
