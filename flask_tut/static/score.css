@@ -1,8 +1,43 @@
-body { 
-    background: white; 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html, body {
+    height: 100%;
+    background: beige;
+    color: black;
+    font-family: 'Montserrat', sans-serif; 
 }
 
-.fname {
+.left {
+    background: white;
+    height: 100vh;
+}
+
+.right {
+    position: relative;
+    background: black;
+    color: white;
+    height: 100vh;
+    /* display: flex; */
+}
+
+.logo {
+    float: right;
+}
+
+.score {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    bottom: 0;
+}
+.score-text {
+    font-size: 15em;
+    font-weight: bolder;
+    text-align: center;
+}
+/* .fname {
     font-weight: 600;
     letter-spacing: 0px;
     margin: 50px 0 0 0;
@@ -13,4 +48,4 @@ body {
     letter-spacing: 0px;
     margin: 50px 0 0 0;
     font-size: 34px;
-}
+} */
