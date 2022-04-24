@@ -2,34 +2,45 @@
 {% import "bootstrap/wtf.html" as wtf %}
 
 {% block styles %}
-{{ super() }}
-	<style>
-		body { background: #e8f1f9; }
-	</style>
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='index.css')}}">
 {% endblock %}
 
-
 {% block title %}
-Find Celeb Score
+Find Celebrity Score
 {% endblock %}
 
 
 {% block content %}
 
-<div class="container">
+<div class="left">
+  <image class="homebird" alt="" src="{{url_for('static',filename = 'assets/homebird.png')}}" >
+</div>
+<script src="{{url_for('static', filename='index.css')}}"></script>
+
+<div class="container right">
+  <!-- home button -->
+  <!-- <div class="row logo"><a href=""><h3>home</h3></a></div> -->
+
+  <!-- right side --> 
   <div class="row">
-    <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+      <!-- search display text -->
+      <br><br>
+      <h1 class="text-center search">search</h1><br><br><br>
 
-      <h1 class="pt-5 pb-2">Welcome to index</h1>
-
-      <p class="lead">This is the index page for an example Flask app using Bootstrap and WTForms. </p>
-        {% if error %}
-          <p>Invalid Celebrity</p>
-        {% endif %} 
-      {{ wtf.quick_form(form) }}
-
-    </div>
+      <!-- error handling -->
+      {% if error %}
+        <p>Invalid Celebrity</p>
+      {% endif %} 
   </div>
+
+  <!-- footer: "made with love..." -->
+  <div class="bottom">
+    <h4 class="bottom-text">made with &#10084; for CSCE 470</h4>
+  </div>
+
+  <!-- celeb name input form -->
+  {{ wtf.quick_form(form) }}
 </div>
 
 {% endblock %}
