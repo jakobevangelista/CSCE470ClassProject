@@ -23,7 +23,9 @@ Find Celeb Score
       <h1 class="pt-5 pb-2">Welcome to index</h1>
 
       <p class="lead">This is the index page for an example Flask app using Bootstrap and WTForms. </p>
-
+        {% if error %}
+          <p>Invalid Celebrity</p>
+        {% endif %} 
       {{ wtf.quick_form(form) }}
 
     </div>
