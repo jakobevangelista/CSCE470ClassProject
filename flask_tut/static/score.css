@@ -7,6 +7,10 @@ html, body {
     font-family: 'Montserrat', sans-serif; 
 }
 
+a, a:hover {
+    color: white;
+    text-decoration: none;
+}
 
 .right {
     position: absolute;
@@ -18,8 +22,10 @@ html, body {
 
 }
 
-.logo {
+.home-btn {
     float: right;
+    padding-top: 3%;
+    padding-right: 6%;
 }
 
 .score {
