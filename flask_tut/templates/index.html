@@ -3,8 +3,7 @@
 
 {% block styles %}
 {{super()}}
-<link rel="stylesheet"
-      href="{{url_for('.static', filename='index.css')}}">
+<link rel="stylesheet" href="{{url_for('.static', filename='index.css')}}">
 {% endblock %}
 
 {% block title %}
@@ -14,42 +13,33 @@ Find Celebrity Score
 
 {% block content %}
 
- <div class="left">
+<div class="left">
   <image class="homebird" alt="" src="{{url_for('static',filename = 'assets/homebird.png')}}" >
-  
 </div>
- <script src="{{url_for('static', filename='index.css')}}"></script>
+<script src="{{url_for('static', filename='index.css')}}"></script>
 
 <div class="container right">
-
   <!-- home button -->
-  <div class="row">
-    <div class="logo">
-      <a href="">
-        <h3>home</h3>
-      </a>
-    </div>
-    
-  </div>
+  <div class="row logo"><a href=""><h3>home</h3></a></div>
 
-  <!-- main content --> 
+  <!-- right side --> 
   <div class="row">
-      <h1 class="text-center search" >search</h1><br><br><br>
+      <!-- search display text -->
+      <h1 class="text-center search">search</h1><br><br><br>
 
       <!-- error handling -->
       {% if error %}
         <p>Invalid Celebrity</p>
       {% endif %} 
 
-      <!-- celeb name form -->
+      <!-- celeb name input form -->
       {{ wtf.quick_form(form) }}
-
-      <!-- footer: "made with love..." -->
-      <div class="footer navbar-fixed-bottom">
-        <h4 class="text-center">made with love for CSCE 470</h4>
-      </div>
-
   </div>
-
 </div>
+
+<!-- footer: "made with love..." -->
+<div class="footer navbar-fixed-bottom">
+  <h4 class="text-center">made with love for CSCE 470</h4>
+</div>
+
 {% endblock %}
