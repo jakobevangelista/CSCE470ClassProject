@@ -37,15 +37,41 @@ html, body {
     font-weight: bolder;
     text-align: center;
 }
-/* .fname {
+
+.fullname {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.fname {
     font-weight: 600;
-    letter-spacing: 0px;
     margin: 50px 0 0 0;
-    font-size: 34px;
+    font-size: 50px;
 }
 .lname {
-    font-weight: 600;
-    letter-spacing: 0px;
+    font-weight: 500;
     margin: 50px 0 0 0;
-    font-size: 34px;
-} */
+    font-size: 50px;
+}
+
+.subtitle {
+    font-weight: 600;
+}
+
+.vl {
+    position: absolute;
+    border-left: 5px solid black;
+    height: 500px;
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+
+  .col {
+    margin: 100px 0 0 50px;
+  }
+
+  .data {
+      padding-left: 50px;
+  }
+

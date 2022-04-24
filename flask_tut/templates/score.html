@@ -16,23 +16,35 @@
 <!-- main container -->
 <div class="container-fluid p-0">
   <div class="row">
-
+    
       <!-- left side: celeb info & top words -->
-      <div class="col-xs-8 left">
-        <p class="fname"> {{first_name}}</p>
-        <p class="lname"> {{last_name}}</p>
-        <p>Top Ten Words</p>
-        <p>1. {{word1}}</p>
-        <p>2. {{word2}}</p>
-        <p>3. {{word3}}</p>
-        <p>4. {{word4}}</p>
-        <p>5. {{word5}}</p>
-        <p>6. {{word6}}</p>
-        <p>7. {{word7}}</p>
-        <p>8. {{word8}}</p>
-        <p>9. {{word9}}</p>
-        <p>10. {{word10}}</p>
+      <div class="col">
+        <div class="vl"></div>
       </div>
+    
+      <div class="col">
+        <div class="data">
+          <div class="fullname">
+            <p class="fname">{{ first_name }} </p> 
+            <p> &nbsp;&nbsp;&nbsp; <p> 
+            <p class="lname">{{ last_name }} </p>
+          </div>
+          <br>
+          <p class="subtitle">Top Ten Words</p>
+          <p>1. {{word1}}</p>
+          <p>2. {{word2}}</p>
+          <p>3. {{word3}}</p>
+          <p>4. {{word4}}</p>
+          <p>5. {{word5}}</p>
+          <p>6. {{word6}}</p>
+          <p>7. {{word7}}</p>
+          <p>8. {{word8}}</p>
+          <p>9. {{word9}}</p>
+          <p>10. {{word10}}</p>
+        </div>
+      </div>
+
+      <script src="{{url_for('static', filename='score.css')}}"></script>
 
       <!-- right side: sentiment score -->
       <div class="col-xs-4 right">
