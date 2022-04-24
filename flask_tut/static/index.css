@@ -26,3 +26,24 @@ a:hover {
 .search {
     font-size: 7em;
 }
+
+
+.left {
+    background-color: #A3D2E5;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
+.homebird {
+    max-height: 600px;
+    /* padding-top: 200px; */
+    align-self: flex-end;
+    overflow: hidden;
+}
+
+.container {
+    float: right;
+    /* transform: translateY(-50%); */
+}
