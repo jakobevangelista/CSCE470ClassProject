@@ -1,0 +1,23 @@
+body { 
+    background: white; 
+}
+
+.left {
+    background-color: #A3D2E5;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
+.homebird {
+    max-height: 600px;
+    /* padding-top: 200px; */
+    align-self: flex-end;
+}
+
+.container {
+    float: right;
+
+
+}
